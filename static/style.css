@@ -3,46 +3,47 @@ html {
 }
 
 
-
-/* Hamburger Button Styles */
-.navbar-toggler {
+/* Hamburger style */
+.hamburger {
+    width: 30px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 25px;
-    background: none;
-    border: none;
     cursor: pointer;
-    padding: 0;
+    z-index: 1000;
 }
 
-/* Hamburger Bars */
-.bar {
-    width: 30px;
+.hamburger span {
     height: 4px;
-    background-color: #333;
-    transition: 0.4s;
+    background: #333;
     border-radius: 2px;
+    transition: 0.3s;
 }
 
-/* Add space between bars */
-.bar:not(:last-child) {
-    margin-bottom: 5px;
+/* Hamburger animation on toggle */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
 }
-
-/* Active state: Turns into 'X' */
-.navbar-toggler.active .bar:nth-child(1) {
-    transform: translateY(12px) rotate(45deg);
-}
-
-.navbar-toggler.active .bar:nth-child(2) {
+.hamburger.active span:nth-child(2) {
     opacity: 0;
 }
-
-.navbar-toggler.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
 }
+
+/* Hide menu by default on small screens */
+.navbar-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.navbar-collapse.show {
+    display: flex;
+}
+
 .hero-section {
     min-height: 95vh;
     display: flex;

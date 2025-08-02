@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger");
-    if (hamburger) {
+    const navbarMenu = document.getElementById("navbarNav");
+
+    if (hamburger && navbarMenu) {
         hamburger.addEventListener("click", function () {
             this.classList.toggle("active");
+            navbarMenu.classList.toggle("show");
         });
     }
 
