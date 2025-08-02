@@ -352,6 +352,13 @@ footer {
     
       
 }
+#preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: white url('/static/loader.gif') no-repeat center center;
+    z-index: 9999;
+  }
 .edu-card{
     font-size: 14px;
 }
