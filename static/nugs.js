@@ -40,7 +40,7 @@ function revealCards() {
 }
 window.addEventListener("load", function(){
     document.getElementById("preloader").style.display = "none";
-  });
+});
 window.addEventListener('scroll', revealCards);
 window.addEventListener('load', revealCards);
 
