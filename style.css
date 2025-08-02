@@ -16,15 +16,6 @@ html {
     cursor: pointer;
     padding: 0;
 }
-.hero-text h2 {
-    font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-    .hero-text h2 {
-        font-size: 2.5rem;
-    }
-}
 
 /* Hamburger Bars */
 .bar {
