@@ -8,24 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="static/assets/nugs.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="tGgL4U2rgQfrLDi1HWwu6TX7VMgh2u4J_8DkPN5BIcc" />
 
-        <meta name="description" content="Download Electrical Engineering Level 100 study materials, past questions, and lecture notes.">
-        <meta name="keywords" content="study nugs,nugs passco, past questions, UMaT study materials, EEG100, srid passco,umat passco,passco,electrical passco,UMaT, SRID, NUGS SRID, Ghana,UMaT srid nugs,Nugs SRID">
-        <meta name="author" content="StudyLnugs">
-        <meta name="robots" content="index, follow">
-      
-        <!-- Open Graph for social sharing -->
-        <meta property="og:title" content="StudyLnugs - SRID UMaT">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Find all SRID UMaT past Questions here">
-        <meta property="og:image" content="https://www.studylnugs.com/static/assets/nugs.png">
-        <meta property="og:url" content="https://www.studylnugs.com">
-      
-     
-      </head>
-      
+    <meta name="description" content="Download Electrical Engineering Level 100 study materials, past questions, and lecture notes.">
+    <meta name="keywords" content="study nugs,nugs passco, past questions, UMaT study materials, EEG100, srid passco,umat passco,passco,electrical passco,UMaT, SRID, NUGS SRID, Ghana,UMaT srid nugs,Nugs SRID">
+    <meta name="author" content="StudyLnugs">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="StudyLnugs - SRID UMaT">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Find all SRID UMaT past Questions here">
+    <meta property="og:image" content="https://www.studylnugs.com/static/assets/nugs.png">
+    <meta property="og:url" content="https://www.studylnugs.com">
+  
     <style>
         /* Preloader Styles */
         #preloader {
@@ -60,69 +56,208 @@
                 width: 25vw;
             }
         }
+
+        /* Bigger Navbar Styles */
+        .navbar {
+            padding: 1.5rem 0 !important;
+            font-size: 1.1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.4rem !important;
+            font-weight: bold;
+        }
+
+        .navbar-brand img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+
+        .nav-link {
+            font-size: 1.1rem !important;
+            padding: 0.8rem 1rem !important;
+        }
+
         /* Mobile optimizations */
-@media (max-width: 576px) {
-    .brand-text {
-        font-size: 0.9rem;
-    }
-    
-    .navbar-brand img {
-        width: 40px !important;
-        height: 40px !important;
-    }
-    
-    .navbar {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-}
+        @media (max-width: 576px) {
+            .navbar {
+                padding: 1rem 0 !important;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem !important;
+            }
+            
+            .navbar-brand img {
+                width: 50px !important;
+                height: 50px !important;
+            }
+            
+            .nav-link {
+                font-size: 1rem !important;
+                padding: 0.7rem 1rem !important;
+            }
+        }
 
-@media (max-width: 480px) {
-    .brand-text {
-        font-size: 0.8rem;
-    }
-    
-    .navbar-brand img {
-        width: 35px !important;
-        height: 35px !important;
-    }
-}
+        @media (max-width: 480px) {
+            .navbar-brand {
+                font-size: 1.1rem !important;
+            }
+            
+            .navbar-brand img {
+                width: 45px !important;
+                height: 45px !important;
+            }
+        }
 
-@media (max-width: 360px) {
-    .brand-text {
-        font-size: 0.75rem;
-    }
-    
-    .navbar-brand img {
-        width: 30px !important;
-        height: 30px !important;
-    }
-}
+        @media (max-width: 360px) {
+            .navbar-brand {
+                font-size: 1rem !important;
+            }
+            
+            .navbar-brand img {
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            margin-top: 120px;
+            padding: 4rem 0;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .nugs-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .nugs-button:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Testimonials */
+        .wss {
+            text-align: center;
+            margin: 3rem 0;
+            font-size: 2.5rem;
+        }
+
+        .testimonials-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #495057;
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
     </style>
-    
-    
 </head>
 <body>
     <div id="preloader">
         <img src="static/assets/nugs.png" alt="Loading..." id="spinner-logo">
     </div>
     
-    <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-5 py-md-4 fixed-top mb-5">
+    <!-- Fixed Navbar with Bootstrap 4 syntax -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid px-3">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="static/assets/nugs.png" width="50" height="50" class="d-inline-block me-2" alt="">
-                <span class="brand-text">NUGS UMaT-SRID</span>
+                <img src="static/assets/nugs.png" class="d-inline-block mr-2" alt="">
+                <span>NUGS UMaT-SRID</span>
             </a>
             
-            <!-- Bootstrap Hamburger Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Bootstrap 4 Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Menu to show/hide -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="#" style="color: red;">Home</a>
                     </li>
@@ -139,27 +274,27 @@
             </div>
         </div>
     </nav>
-<div class="container">
-    <div class="row hero-section">
-        <!-- Left Text Section -->
-        <div class="col-lg-6 d-flex align-items-center">
-            <div class="hero-text">
-                <h2 class="display-4 fw-bold " style="text-align: center;">Welcome to The NUGS Study Hub</h2>
-                <p class="lead">Find past questions, study materials, and resources to boost your academic success.</p>
-                <a href="https://studylnugs.pythonanywhere.com/select" class="nugs-button">Get Started</a>
+
+    <div class="container">
+        <div class="row hero-section">
+            <!-- Left Text Section -->
+            <div class="col-lg-6 d-flex align-items-center">
+                <div class="hero-text">
+                    <h2 class="display-4 font-weight-bold">Welcome to The NUGS Study Hub</h2>
+                    <p class="lead">Find past questions, study materials, and resources to boost your academic success.</p>
+                    <a href="https://studylnugs.pythonanywhere.com/select" class="nugs-button">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Right Image Section -->
+            <div class="col-lg-6 hero-image">
+                <img src="static/assets/download.jpg" alt="Study Hub Image" class="img-fluid">
             </div>
         </div>
-
-        <!-- Right Image Section -->
-        <div class="col-lg-6 hero-image">
-            <img src="static/assets/download.jpg" alt="Study Hub Image" class="img-fluid">
-        </div>
     </div>
-</div>
 
     <h1 class="wss">What our students say</h1>
     <div class="testimonials-container">
-        
         <div class="testimonial-card">
             <img src="student1.jpg" alt="Student 1">
             <p>"The best part is that everything is well-organized and easy to find. This platform has truly improved my study habits and exam preparation!"</p>
@@ -180,18 +315,15 @@
         </div>
     </div>
 
-</div>
-<div>
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
- 
                 <h3>About Us</h3>
-                <p>We are committed to  helping students find study materials to help boost their academics.</p>
+                <p>We are committed to helping students find study materials to help boost their academics.</p>
             </div>
             <div class="footer-section contact">
                 <h3>Contact Info</h3>
-                <p>Email: <a href="mailto:support@umatsridinternship.com">support@lnugs.com</a></p>
+                <p>Email: <a href="mailto:support@lnugs.com">support@lnugs.com</a></p>
                 <p>Phone: <a href="tel:+233553602142">+233 553 602 142</a></p>
             </div>
             <div class="footer-section links">
@@ -209,23 +341,21 @@
             <p>Created by <a href="#">Ntim peter prince(kwabsntim)</a></p>
         </div>
     </footer>
-    
-</div>
-<script>
-    window.addEventListener("load", function () {
-      const preloader = document.getElementById("preloader");
-      preloader.style.transition = "opacity 0.5s ease";
-      preloader.style.opacity = "0";
-  
-      setTimeout(() => {
-        preloader.style.display = "none";
-      }, 2000);
-    });
-</script>
-<script src="static/nugs.js"></script> 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            preloader.style.transition = "opacity 0.5s ease";
+            preloader.style.opacity = "0";
+        
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 2000);
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
